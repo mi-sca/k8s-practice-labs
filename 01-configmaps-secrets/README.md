@@ -11,6 +11,8 @@ kubectl create configmap app-config \
 
 kubectl create secret generic db-secret \
   --from-literal=DB_PASSWORD=supersecret
+
+kubectl apply -f app-pod.yaml
 ```
 
 ### Verifica
