@@ -1,0 +1,14 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: deny-external
+  namespace: frontend # la policy è valida solo in questo namespace
+spec:
+  podSelector:
+    matchLabels:
+      app: web # si applica solo ai Pod con questa label
+  policyTypes:
+    - Ingress # controlla il traffico in ingresso
+  ingress:
+    - from:
+        - podSelector: {} # permette il traffico solo da Pod nello stesso namespace
