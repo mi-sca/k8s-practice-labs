@@ -1,10 +1,9 @@
-In questo scenario devi:
+# In questo scenario devi:
 
 - Creare un PersistentVolume (PV)
 - Creare un PersistentVolumeClaim (PVC)
 - Montare il PVC in un Pod
 - Verificare che i dati rimangano dopo l'eliminazione del Pod
----
 
 ## Crea il PV
 Applica il file `pv.yaml`
