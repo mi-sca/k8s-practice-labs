@@ -87,4 +87,5 @@ kubectl auth can-i delete pods --as=system:serviceaccount:rbac-demo:limited-sa -
 # Output atteso da entrambe i comandi
 no
 ```
-
+![alt text](image.png)
+![alt text](image-1.png)
